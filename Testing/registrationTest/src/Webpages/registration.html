@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <script>
+    function registerdata() {
+      let username = document.getElementById("username").value;
+
+      if (username.trim() === "") {
+        document.getElementById("msg").innerText = "Please enter a username.";
+        return;
+      }
+
+      // Redirect to Welcome page with username in query string
+      window.location.href = "Welcome.html?user=" + encodeURIComponent(username);
+    }
+
+    // Alternate: Prevent default submit and redirect
+    /*
+    document.getElementById("myform").addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (this.checkValidity()) {
+        let username = document.getElementById("username").value;
+        window.location.href = "Welcome.html?user=" + encodeURIComponent(username);
+      }
+    });
+    */
+  </script>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form id="myform" action="/register" method="post">
+    
+    <!-- Username -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- Phone -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Confirm Password -->
+    <label for="confirm">Confirm Password:</label>
+    <input type="password" id="confirm" name="confirm" required>
+    <br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br><br>
+
+    <!-- Address -->
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <!-- Course Selection -->
+    <label for="course">Select Course:</label>
+    <select id="course" name="course">
+      <option value="">--language--</option>  
+      <option value="java">Java</option>
+      <option value="python">Python</option>
+      <option value="javascript">JavaScript</option>
+      <option value="csharp">C#</option>
+    </select>
+    <br><br>
+
+    <!-- Submit -->
+    <button type="button" onclick="registerdata()" id="btn">Register</button>
+    <p id="msg" style="color:red;"></p>
+  </form>
+</body>
+</html>
