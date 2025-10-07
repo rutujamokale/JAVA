@@ -52,11 +52,11 @@ public class LoginTest {
     }
 
     
-    // @AfterMethod
-    // public static void teardown(){
-    //     if(driver!=null){
-    //         driver.quit();
-    //     }
-    // }
+    @AfterMethod
+    public static void teardown(){
+        if(driver!=null){
+            driver.quit();
+        }
+    }
     
 }
