@@ -1,5 +1,8 @@
 package com.transflower.statuscodeplayground.stepdefs;
 
+import org.testng.Assert;
+
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static io.restassured.RestAssured.given;
@@ -24,6 +27,15 @@ public class StatusSteps {
     @Then("the response status should be {int}")
     public void theResponseStatusShouldBe(int statusCode) {
         response.then().statusCode(statusCode);
+    }
+
+    @And("the response should contain {string}")
+    public void theResponseShouldContain(String expectedText) {
+        String body = response.getBody().asString();
+        Assert.assertTrue(
+            body.toLowerCase().contains(expectedText.toLowerCase()),
+            "Expected response body to contain: " + expectedText + " but got: " + body
+        );
     }
 
     // @And("the response should contain {string}")
