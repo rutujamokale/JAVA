@@ -15,7 +15,7 @@ public class ProductApiTest {
 
     @Test
     public void testGetAllProducts() {
-        RestAssured.baseURI = "http://localhost:9090";
+        RestAssured.baseURI = "http://localhost:8080";
 
         given()
             .when().get("/api/products")
@@ -28,7 +28,7 @@ public class ProductApiTest {
 
      @Test
     public void getProductById_shouldReturnOne() {
-        RestAssured.baseURI = "http://localhost:9090";
+        RestAssured.baseURI = "http://localhost:8080";
         given()
         .when()
             .get("/api/products/1")
@@ -39,7 +39,7 @@ public class ProductApiTest {
  
     @Test
     public void createProduct_shouldReturn201() {
-        RestAssured.baseURI = "http://localhost:9090";
+        RestAssured.baseURI = "http://localhost:8080";
         String newProductJson = """
         {
             "id" :4,
@@ -62,7 +62,7 @@ public class ProductApiTest {
 
     @Test
     public void updateProduct_shouldReturn200() {
-        RestAssured.baseURI = "http://localhost:9090";
+        RestAssured.baseURI = "http://localhost:8080";
         String updatedProductJson = """
         {
             "id": 1,
