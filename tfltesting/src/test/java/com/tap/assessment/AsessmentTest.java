@@ -1,6 +1,7 @@
 package com.tap.assessment;
 
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.notNullValue;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -30,4 +31,30 @@ public class AsessmentTest {
 
 
     }
+
+    @Test
+    public void testGetAllAssessmentByDate(){
+        given()
+
+        .when()
+                .get("/api/assessment/creationdate/fromDate/2023-12-05/toDate/2025-02-07")
+        .then()
+        .statusCode(200)
+        
+        .body("$",notNullValue());
+
+
+        
+    }
+    @Test
+
+    public void testGetAllEmployee(){
+        given()
+        .when()
+            .get("/api/assessment/employees")
+        .then()
+        .statusCode(200)
+        . body("$",notNullValue());   
+    }
+
 }

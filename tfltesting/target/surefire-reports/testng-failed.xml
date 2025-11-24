@@ -5,8 +5,8 @@
     <classes>
       <class name="com.tap.assessment.AsessmentTest">
         <methods>
+          <include name="testGetAllAssessmentByDate"/>
           <include name="setup"/>
-          <include name="testGetAssessmentDetails"/>
         </methods>
       </class> <!-- com.tap.assessment.AsessmentTest -->
     </classes>
