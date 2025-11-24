@@ -57,4 +57,29 @@ public class AsessmentTest {
         . body("$",notNullValue());   
     }
 
+    @Test
+
+    public void testGetEmployeeById(){
+        given()
+        .when()
+            .get("/api/assessment/employee/1")
+        .then()
+        .statusCode(200)
+        .body("id",equalTo(1));    
+    }
+
+    @Test
+    public void testGetAllSubjects(){
+        given()
+        .when()
+            .get("/api/assessment/subjects")    
+            
+        .then()
+        .statusCode(200)
+        .body("$",notNullValue());    
+    }
+
+    @Test
+    public void testGet 
+
 }
