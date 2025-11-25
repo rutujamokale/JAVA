@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.given;
+import io.restassured.http.ContentType;
 
 public class RoleTest {
     
@@ -48,7 +49,42 @@ public void testGetUserByRole() {
         .statusCode(anyOf(is(200), is(400), is(404)));
 }
 
-    
+   @Test
+    public void testAddNewRole(){
+        
+    String requestBody = "{\n" +
+                "    \"id\":4,\n" +
+                "    \"name\":\"mentor\",\n" +
+                "    \"lob\":\"teaching\"\n" +
+                "}";
+                      
+                given()
+                .contentType(ContentType.JSON)  
+                .body(requestBody)  
+                
+                .when()
+                    .post("/api/role/roles")
+
+                    .then()     
+                     .statusCode(anyOf(is(200), is(404)));
+
+}
+@Test
+
+public void testRemoveExitingRole(){
+
+    int roleIdToDelete=5;
+    given()
+    .when()
+        .delete("/api/role/roles/" +roleIdToDelete)   
+        
+        .then()
+        .statusCode(200) ;
+
+
+
+}
+
 
 
 }

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tap.assessment.RoleTest" class="method navigator-link" hash-for-method="testAddNewRole">testAddNewRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.tap.assessment.RoleTest" class="method navigator-link" hash-for-method="testGetAllRoles">testGetAllRoles</a> <!-- method navigator-link -->
@@ -129,6 +134,13 @@
               <span class="class-name">com.tap.assessment.RoleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNewRole">
+                  </a> <!-- testAddNewRole -->
+                  <span class="method-name">testAddNewRole</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testGetAllRoles">
@@ -196,20 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testGetAllRoles')
+data.setCell(0, 1, 'testAddNewRole')
 data.setCell(0, 2, 'com.tap.assessment.RoleTest')
-data.setCell(0, 3, 2134);
+data.setCell(0, 3, 2649);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testGetUserByRole')
+data.setCell(1, 1, 'testGetAllRoles')
 data.setCell(1, 2, 'com.tap.assessment.RoleTest')
-data.setCell(1, 3, 74);
+data.setCell(1, 3, 337);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGetUserByRole')
+data.setCell(2, 2, 'com.tap.assessment.RoleTest')
+data.setCell(2, 3, 66);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -241,12 +257,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">testAddNewRole</span>
+                <span class="method-start">497 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">testGetAllRoles</span>
-                <span class="method-start">662 ms</span>
+                <span class="method-start">3149 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetUserByRole</span>
-                <span class="method-start">2804 ms</span>
+                <span class="method-start">3486 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
