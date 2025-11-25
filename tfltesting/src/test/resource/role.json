@@ -1,0 +1,20 @@
+[  
+    {
+        "id": 1,
+        "name": "admin",
+        "lob":" HR"
+    },
+    {
+        "id": 1,
+        "name": "sme",
+        "lob": "Technical"
+
+    },
+    {
+        "id": 3,
+        "name": "student",
+        "lob": "Assessment"
+
+    }  
+]
+
