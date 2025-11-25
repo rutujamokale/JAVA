@@ -3,12 +3,12 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.tap.assessment.AsessmentTest">
+      <class name="com.tap.assessment.RoleTest">
         <methods>
           <include name="setup"/>
-          <include name="testGetConceptsBySubject"/>
+          <include name="testGetUserByRole"/>
         </methods>
-      </class> <!-- com.tap.assessment.AsessmentTest -->
+      </class> <!-- com.tap.assessment.RoleTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

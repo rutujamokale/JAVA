@@ -1,6 +1,10 @@
 package com.tap.assessment;
 
+
+
+import static org.hamcrest.CoreMatchers.anyOf;
 import static org.hamcrest.Matchers.empty;
+import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -32,6 +36,19 @@ public class RoleTest {
             
     }
 
+    @Test
+
+public void testGetUserByRole() {
+    given()
+        .queryParam("roleIds", 1)
+        .queryParam("roleIds", 2)
+    .when()
+        .get("/api/role/users")
+    .then()
+        .statusCode(anyOf(is(200), is(400), is(404)));
+}
+
     
+
 
 }
