@@ -1,85 +1,108 @@
-package com.tap.assessment;
+// package com.tap.assessment;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.notNullValue;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+// import static org.hamcrest.Matchers.equalTo;
+// import static org.hamcrest.Matchers.notNullValue;
+// import org.testng.annotations.BeforeClass;
+// import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
-import static io.restassured.RestAssured.given;
+// import io.restassured.RestAssured;
+// import static io.restassured.RestAssured.given;
 
-public class AsessmentTest {
-    @BeforeClass
-    public void setup(){
+// public class AsessmentTest {
+//     @BeforeClass
+//     public void setup(){
        
-            RestAssured.baseURI="http://localhost:5238";
+//             RestAssured.baseURI="http://localhost:5238";
 
 
 
-    }
-    @Test
+//     }
+//     @Test
 
-    public void testGetAssessmentDetails(){
-        given()
+//     public void testGetAssessmentDetails(){
+//         given()
 
-       . when()
-            .get("/api/assessment/1")
-        .then()
+//        . when()
+//             .get("/api/assessment/1")
+//         .then()
 
-        .statusCode(200)
-        .body("id",equalTo(1));
+//         .statusCode(200)
+//         .body("id",equalTo(1));
 
 
-    }
+//     }
 
-    @Test
-    public void testGetAllAssessmentByDate(){
-        given()
+//     @Test
+//     public void testGetAllAssessmentByDate(){
+//         given()
 
-        .when()
-                .get("/api/assessment/creationdate/fromDate/2023-12-05/toDate/2025-02-07")
-        .then()
-        .statusCode(200)
+//         .when()
+//                 .get("/api/assessment/creationdate/fromDate/2023-12-05/toDate/2025-02-07")
+//         .then()
+//         .statusCode(200)
         
-        .body("$",notNullValue());
+//         .body("$",notNullValue());
 
 
         
-    }
-    @Test
+//     }
+//     @Test
 
-    public void testGetAllEmployee(){
-        given()
-        .when()
-            .get("/api/assessment/employees")
-        .then()
-        .statusCode(200)
-        . body("$",notNullValue());   
-    }
+//     public void testGetAllEmployee(){
+//         given()
+//         .when()
+//             .get("/api/assessment/employees")
+//         .then()
+//         .statusCode(200)
+//         . body("$",notNullValue());   
+//     }
 
-    @Test
+//     @Test
 
-    public void testGetEmployeeById(){
-        given()
-        .when()
-            .get("/api/assessment/employee/1")
-        .then()
-        .statusCode(200)
-        .body("id",equalTo(1));    
-    }
+//     public void testGetEmployeeById(){
+//         given()
+//         .when()
+//             .get("/api/assessment/employee/1")
+//         .then()
+//         .statusCode(200)
+//         .body("id",equalTo(1));    
+//     }
 
-    @Test
-    public void testGetAllSubjects(){
-        given()
-        .when()
-            .get("/api/assessment/subjects")    
+//     @Test
+//     public void testGetAllSubjects(){
+//         given()
+//         .when()
+//             .get("/api/assessment/subjects")    
             
-        .then()
-        .statusCode(200)
-        .body("$",notNullValue());    
-    }
+//         .then()
+//         .statusCode(200)
+//         .body("$",notNullValue());    
+//     }
 
-    @Test
-    public void testGet 
+//     @Test
+//     public void testGetConcepts(){
+//         given()
+//         .when()
+//             .get("/api/assessment/concepts")
 
-}
+//          .then()
+//          .statusCode(200)
+//          .body("$",notNullValue());   
+//     } 
+
+//     @Test
+
+//     public void testGetConceptsBySubject(){
+//         given()
+//         .when()
+//             .get("/api/assessment/concepts/subjects/1")
+//         .then()
+//         .statusCode(200)  
+//         .body("id",equalTo(1));
+        
+        
+//     }
+
+
+
+// }

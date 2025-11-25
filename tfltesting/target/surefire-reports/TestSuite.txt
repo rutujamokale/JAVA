@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
-Test set: com.tap.assessment.AsessmentTest
+Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.018 s <<< FAILURE! -- in com.tap.assessment.AsessmentTest
-com.tap.assessment.AsessmentTest.testGetConceptsBySubject -- Time elapsed: 0.163 s <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.267 s <<< FAILURE! -- in TestSuite
+com.tap.assessment.AsessmentTest.testGetConceptsBySubject -- Time elapsed: 0.161 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 JSON path id doesn't match.
@@ -58,8 +58,8 @@ Expected: <1>
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
