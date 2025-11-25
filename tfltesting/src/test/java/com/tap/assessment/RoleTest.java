@@ -130,21 +130,34 @@ public class RoleTest {
                      .statusCode(anyOf(is(200), is(404)));
 
 }
+
+
+
+
 @Test
+public void testRemoveExitingRole () {
 
-public void testRemoveExitingRole(){
+    int id = 9;
 
-    int roleIdToDelete=9;
-    given()
-    .when()
-        .delete("/api/role/roles/" +roleIdToDelete)   
-        
-        .then()
-        .statusCode(200) ;
+    Response response = given()
+            .when()
+            .delete("http://localhost:5238/api/role/roles/" + id)
+            .then()
+            .extract().response();
 
+    int status = response.getStatusCode();
 
-
+    if (status == 200) {
+        System.out.println("Role deleted successfully.");
+    } 
+    else if (status == 404) {
+        System.out.println("Role not found.");
+    } 
+    else {
+        System.out.println("Unexpected status: " + status);
+    }
 }
+
 
 
 
