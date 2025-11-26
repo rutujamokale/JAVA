@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.tap.assessment.RoleTest" time="4.719" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.tap.assessment.RoleTest" time="4.624" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Rutuja\AppData\Local\Temp\surefire6482381853136848234\surefirebooter-20251126154200223_3.jar C:\Users\Rutuja\AppData\Local\Temp\surefire6482381853136848234 2025-11-26T15-42-00_004-jvmRun1 surefire-20251126154200223_1tmp surefire_0-20251126154200223_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Rutuja\AppData\Local\Temp\surefire2719946895139094219\surefirebooter-20251126164649773_3.jar C:\Users\Rutuja\AppData\Local\Temp\surefire2719946895139094219 2025-11-26T16-46-49_499-jvmRun1 surefire-20251126164649773_1tmp surefire_0-20251126164649773_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\JAVA\tfltesting\target\test-classes;D:\JAVA\tfltesting\target\classes;C:\Users\Rutuja\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Rutuja\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Rutuja\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Rutuja\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-java\4.35.0\selenium-java-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-api\4.35.0\selenium-api-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.35.0\selenium-chrome-driver-4.35.0.jar;C:\Users\Rutuja\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.35.0\selenium-chromium-driver-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-json\4.35.0\selenium-json-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.35.0\selenium-manager-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.35.0\selenium-devtools-v137-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.35.0\selenium-devtools-v138-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.35.0\selenium-devtools-v139-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.35.0\selenium-edge-driver-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.35.0\selenium-firefox-driver-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-http\4.35.0\selenium-http-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.35.0\selenium-ie-driver-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.35.0\selenium-remote-driver-4.35.0.jar;C:\Users\Rutuja\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\Rutuja\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Rutuja\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Rutuja\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Rutuja\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-api\1.53.0\opentelemetry-api-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-context\1.53.0\opentelemetry-context-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-common\1.53.0\opentelemetry-common-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.53.0\opentelemetry-exporter-logging-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.53.0\opentelemetry-sdk-common-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.53.0\opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.53.0\opentelemetry-sdk-extension-autoconfigure-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.53.0\opentelemetry-sdk-trace-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.53.0\opentelemetry-sdk-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.53.0\opentelemetry-sdk-metrics-1.53.0.jar;C:\Users\Rutuja\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.53.0\opentelemetry-sdk-logs-1.53.0.jar;C:\Users\Rutuja\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-os\4.35.0\selenium-os-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.35.0\selenium-safari-driver-4.35.0.jar;C:\Users\Rutuja\.m2\repository\org\seleniumhq\selenium\selenium-support\4.35.0\selenium-support-4.35.0.jar;C:\Users\Rutuja\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\Rutuja\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Rutuja\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Rutuja\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Rutuja\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Rutuja\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Rutuja\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Rutuja\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Rutuja\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Rutuja\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Rutuja\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\Rutuja\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Rutuja\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\Rutuja\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\Rutuja\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\Rutuja\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\Rutuja\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\Rutuja\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Rutuja\AppData\Local\Temp\surefire6482381853136848234\surefirebooter-20251126154200223_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Rutuja\AppData\Local\Temp\surefire2719946895139094219\surefirebooter-20251126164649773_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
@@ -58,16 +58,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAddNewRole" classname="com.tap.assessment.RoleTest" time="1.661">
+  <testcase name="testAddNewRole" classname="com.tap.assessment.RoleTest" time="1.772">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testGetAllRoles" classname="com.tap.assessment.RoleTest" time="1.678">
+  <testcase name="testGetAllRoles" classname="com.tap.assessment.RoleTest" time="1.495">
     <system-out><![CDATA[HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
-Date: Wed, 26 Nov 2025 10:12:03 GMT
+Date: Wed, 26 Nov 2025 11:16:53 GMT
 Server: Kestrel
 Transfer-Encoding: chunked
 
@@ -94,13 +94,48 @@ Transfer-Encoding: chunked
     },
     {
         "id": 12,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 13,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 14,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 15,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 16,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 18,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 19,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 20,
         "name": "mentor",
         "lob": null
     }
 ]
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
-Date: Wed, 26 Nov 2025 10:12:04 GMT
+Date: Wed, 26 Nov 2025 11:16:54 GMT
 Server: Kestrel
 Transfer-Encoding: chunked
 
@@ -127,13 +162,48 @@ Transfer-Encoding: chunked
     },
     {
         "id": 12,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 13,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 14,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 15,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 16,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 18,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 19,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 20,
         "name": "mentor",
         "lob": null
     }
 ]
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
-Date: Wed, 26 Nov 2025 10:12:04 GMT
+Date: Wed, 26 Nov 2025 11:16:54 GMT
 Server: Kestrel
 Transfer-Encoding: chunked
 
@@ -160,17 +230,52 @@ Transfer-Encoding: chunked
     },
     {
         "id": 12,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 13,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 14,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 15,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 16,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 18,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 19,
+        "name": "mentor",
+        "lob": null
+    },
+    {
+        "id": 20,
         "name": "mentor",
         "lob": null
     }
 ]
 ]]></system-out>
   </testcase>
-  <testcase name="testGetUsersByRole" classname="com.tap.assessment.RoleTest" time="0.092">
+  <testcase name="testGetUsersByRole" classname="com.tap.assessment.RoleTest" time="0.08">
     <system-out><![CDATA[Users found for the roles: [{"id":1,"aadharId":null,"firstname":"ravi","lastname":"tambade","email":null,"contactNumber":null,"password":null,"userRoles":[]},{"id":2,"aadharId":null,"firstname":"kajal","lastname":"ghule","email":null,"contactNumber":null,"password":null,"userRoles":[]}]
 ]]></system-out>
   </testcase>
-  <testcase name="testRemoveExitingRole" classname="com.tap.assessment.RoleTest" time="0.021">
+  <testcase name="testRemoveExistingRole" classname="com.tap.assessment.RoleTest" time="0.02">
     <system-out><![CDATA[Role deleted successfully.
 ]]></system-out>
   </testcase>

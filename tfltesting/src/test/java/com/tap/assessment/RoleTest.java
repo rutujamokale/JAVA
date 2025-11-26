@@ -1,25 +1,28 @@
 package com.tap.assessment;
 import java.io.File;
-import static org.hamcrest.CoreMatchers.anyOf;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.everyItem;
-import static org.hamcrest.Matchers.empty;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.not;
-import static org.hamcrest.Matchers.notNullValue;
 import java.util.ArrayList;
 import java.util.List;
-import static org.hamcrest.MatcherAssert.assertThat;
+
+import static org.hamcrest.CoreMatchers.anyOf;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.Matchers.empty;
+import static org.hamcrest.Matchers.everyItem;
+
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import io.restassured.RestAssured;
-import static io.restassured.RestAssured.given;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import static org.hamcrest.Matchers.isOneOf;
+
+import static io.restassured.RestAssured.given;
 
 
 public class RoleTest {
@@ -76,7 +79,7 @@ public class RoleTest {
                   .queryParam("roleIds", 1) 
                 
             .when()
-                .get("http://localhost:5238/api/role/users")
+                .get("/api/role/users")
             .then()
                 .extract().response();  
 
@@ -101,53 +104,54 @@ public class RoleTest {
 
    
 
-  @Test
-public void testAddNewRole() {
+ @Test
+    public void testAddNewRole() {
 
-    String requestBody = "{\n" +
-            "  \"id\":4,\n" +
-            "  \"name\":\"mentor\",\n" +
-            "  \"lob\":\"teaching\"\n" +
-            "}";
+        String requestBody = "{\n" +
+                "  \"id\": 4,\n" +
+                "  \"name\": \"mentor\",\n" +
+                "  \"lob\": \"teaching\"\n" +
+                "}";
 
-    given()
-        .contentType(ContentType.JSON)
-        .body(requestBody)
-
-    .when()
-        .post("/api/role/roles")
-
-    .then()
-        .statusCode(anyOf(is(200), is(201)))
-        .body(equalTo("true")); 
-}
-
+        given()
+            .contentType(ContentType.JSON)
+            .body(requestBody)
+        .when()
+            .post("/api/role/roles")
+        .then()
+            .statusCode(anyOf(is(200), is(201))) 
+            .body(equalTo("true")); 
+    }
+    
 
 @Test
-public void testRemoveExitingRole () {
-
-    int id = 9;
-
-    Response response = given()
+public void testRemoveExistingRole() {
+    int roleId = 25;  
+    Response response = 
+        given()
             .when()
-            .delete("http://localhost:5238/api/role/roles/" + id)
+            .delete("/api/role/roles/" + roleId)
             .then()
-            .extract().response();
-
+            .extract()
+            .response();
     int status = response.getStatusCode();
-
     if (status == 200) {
         System.out.println("Role deleted successfully.");
+        Assert.assertEquals(status, 200);  
     } 
     else if (status == 404) {
         System.out.println("Role not found.");
+        Assert.fail("Role ID " + roleId + " does not exist – TEST FAILED");  
     } 
     else {
-        System.out.println("Unexpected status: " + status);
+        Assert.fail("Unexpected status: " + status); 
     }
 }
 
+
+
 }
+
 
 
 
