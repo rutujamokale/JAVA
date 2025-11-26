@@ -6,7 +6,7 @@
       <class name="com.tap.assessment.RoleTest">
         <methods>
           <include name="setup"/>
-          <include name="testGetUserByRole"/>
+          <include name="testAddNewRole"/>
         </methods>
       </class> <!-- com.tap.assessment.RoleTest -->
     </classes>

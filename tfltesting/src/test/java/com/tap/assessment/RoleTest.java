@@ -1,32 +1,25 @@
 package com.tap.assessment;
-
-
-
-
-
 import java.io.File;
-
 import static org.hamcrest.CoreMatchers.anyOf;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.everyItem;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.notNullValue;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
-
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.given;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import static org.hamcrest.Matchers.isOneOf;
 
 
 public class RoleTest {
@@ -35,8 +28,6 @@ public class RoleTest {
     public void setup(){
        
             RestAssured.baseURI="http://localhost:5238";
-
-
 
     }
 
@@ -110,28 +101,26 @@ public class RoleTest {
 
    
 
-   @Test
-    public void testAddNewRole(){
-        
+  @Test
+public void testAddNewRole() {
+
     String requestBody = "{\n" +
-                "    \"id\":4,\n" +
-                "    \"name\":\"mentor\",\n" +
-                "    \"lob\":\"teaching\"\n" +
-                "}";
-                      
-                given()
-                .contentType(ContentType.JSON)  
-                .body(requestBody)  
-                
-                .when()
-                    .post("/api/role/roles")
+            "  \"id\":4,\n" +
+            "  \"name\":\"mentor\",\n" +
+            "  \"lob\":\"teaching\"\n" +
+            "}";
 
-                    .then()     
-                     .statusCode(anyOf(is(200), is(404)));
+    given()
+        .contentType(ContentType.JSON)
+        .body(requestBody)
 
+    .when()
+        .post("/api/role/roles")
+
+    .then()
+        .statusCode(anyOf(is(200), is(201)))
+        .body(equalTo("true")); 
 }
-
-
 
 
 @Test
@@ -158,7 +147,8 @@ public void testRemoveExitingRole () {
     }
 }
 
-
-
-
 }
+
+
+
+

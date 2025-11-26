@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-25T16:38:14 IST" name="Surefire suite" finished-at="2025-11-25T16:38:18 IST" duration-ms="4321">
+  <suite started-at="2025-11-26T15:42:01 IST" name="Surefire suite" finished-at="2025-11-26T15:42:05 IST" duration-ms="4103">
     <groups>
     </groups>
-    <test started-at="2025-11-25T16:38:14 IST" name="Surefire test" finished-at="2025-11-25T16:38:18 IST" duration-ms="4321">
+    <test started-at="2025-11-26T15:42:01 IST" name="Surefire test" finished-at="2025-11-26T15:42:05 IST" duration-ms="4103">
       <class name="com.tap.assessment.RoleTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tap.assessment.RoleTest@76908cc0]" started-at="2025-11-25T16:38:14 IST" name="setup" finished-at="2025-11-25T16:38:14 IST" duration-ms="676" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tap.assessment.RoleTest@6f96c77]" started-at="2025-11-26T15:42:01 IST" name="setup" finished-at="2025-11-26T15:42:01 IST" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGetAllRoles()[pri:0, instance:com.tap.assessment.RoleTest@76908cc0]" started-at="2025-11-25T16:38:14 IST" name="testGetAllRoles" finished-at="2025-11-25T16:38:18 IST" duration-ms="3458" status="PASS">
+        <test-method signature="testAddNewRole()[pri:0, instance:com.tap.assessment.RoleTest@6f96c77]" started-at="2025-11-26T15:42:01 IST" name="testAddNewRole" finished-at="2025-11-26T15:42:03 IST" duration-ms="1658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewRole -->
+        <test-method signature="testGetAllRoles()[pri:0, instance:com.tap.assessment.RoleTest@6f96c77]" started-at="2025-11-26T15:42:03 IST" name="testGetAllRoles" finished-at="2025-11-26T15:42:05 IST" duration-ms="1682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllRoles -->
-        <test-method signature="testGetUsersByRole()[pri:0, instance:com.tap.assessment.RoleTest@76908cc0]" started-at="2025-11-25T16:38:18 IST" name="testGetUsersByRole" finished-at="2025-11-25T16:38:18 IST" duration-ms="100" status="PASS">
+        <test-method signature="testGetUsersByRole()[pri:0, instance:com.tap.assessment.RoleTest@6f96c77]" started-at="2025-11-26T15:42:05 IST" name="testGetUsersByRole" finished-at="2025-11-26T15:42:05 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUsersByRole -->
-        <test-method signature="testRemoveExitingRole()[pri:0, instance:com.tap.assessment.RoleTest@76908cc0]" started-at="2025-11-25T16:38:18 IST" name="testRemoveExitingRole" finished-at="2025-11-25T16:38:18 IST" duration-ms="23" status="PASS">
+        <test-method signature="testRemoveExitingRole()[pri:0, instance:com.tap.assessment.RoleTest@6f96c77]" started-at="2025-11-26T15:42:05 IST" name="testRemoveExitingRole" finished-at="2025-11-26T15:42:05 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveExitingRole -->
