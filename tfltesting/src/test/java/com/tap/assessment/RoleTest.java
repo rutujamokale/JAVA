@@ -126,7 +126,7 @@ public class RoleTest {
 
 @Test
 public void testRemoveExistingRole() {
-    int roleId = 25;  
+    int roleId = 22;  
     Response response = 
         given()
             .when()
