@@ -2,9 +2,9 @@ package com.transflower.project.entities;
 
 public class Student1 {
     
-    int id;
-    String name;
-    double marks;
+    private  int id;
+    private  String name;
+   private  double marks;
 
     public Student1(){
 
@@ -16,7 +16,7 @@ public class Student1 {
         this.marks=marks;
     }
 
-    void display(){
+     public void display(){
             System.out.println(id + "|" + name + "|" + marks);
     }
 }

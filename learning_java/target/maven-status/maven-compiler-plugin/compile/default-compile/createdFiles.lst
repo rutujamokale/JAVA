@@ -1,4 +1,7 @@
-com\transflower\project\Student.class
+com\transflower\project\entities\AnnualcandidateResult.class
 com\transflower\project\studentService.class
-com\transflower\project\App.class
+com\transflower\Repository\AssessmentIntelligenceRepository.class
 com\transflower\project\DiscountService.class
+com\transflower\project\entities\Student1.class
+com\transflower\project\Student.class
+com\transflower\project\App.class
