@@ -15,18 +15,38 @@ public class App
     {
 
 
-      String s="madam";
-      String rev= "";
+      int num=121;
+      int original=num;
+      int rev=0;
 
-      for(int i=s.length() -1;i>=0;i--){
-        rev +=s.charAt(i);
+      while (num !=0) { 
+         int digit=num % 10;
+         rev= rev * 10 + digit;
+         num = num/10; 
       }
 
-      if(s.equals(rev)){
+      if (original == rev) {
           System.out.println("palindrome");
       }else{
         System.out.println("not palindrome");
       }
+
+
+      // String s="madam";
+      // String rev= "";
+
+      // for(int i=s.length() -1;i>=0;i--){
+      //   rev +=s.charAt(i);
+      // }
+
+      // if(s.equals(rev)){
+      //     System.out.println("palindrome");
+      // }else{
+      //   System.out.println("not palindrome");
+      // }
+
+
+
 
       // String str="java";
       // Map<Character,Integer> map = new HashMap<>();
