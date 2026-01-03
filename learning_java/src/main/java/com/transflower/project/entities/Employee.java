@@ -3,7 +3,7 @@ package com.transflower.project.entities ;
 public class Employee {
     
     private int id;
-    private String name;
+    public String name;
     public double salary;
 
 
