@@ -1,7 +1,9 @@
 package com.transflower.project;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.transflower.project.entities.Employee;
 import com.transflower.project.entities.EmployeeService;
@@ -12,25 +14,25 @@ public class App
     public static void main( String[] args )
     {
 
+      String str="java";
+      Map<Character,Integer> map = new HashMap<>();
 
+      for(char c:str.toCharArray()){
+        map.put(c,map.getOrDefault(c,0)+1);
+      }
 
-      EmployeeService  service = new EmployeeService();
-      service.addEmployee(new Employee(1,"Rupesh",50000));
-       service.addEmployee(new Employee(2,"Rahil",40000));
-        service.addEmployee(new Employee(3,"Rehan",70000));
+      System.out.println(map);
 
-        service.ApplySalaryHike();
+      // EmployeeService  service = new EmployeeService();
+      // service.addEmployee(new Employee(1,"Rupesh",50000));
+      //  service.addEmployee(new Employee(2,"Rahil",40000));
+      //   service.addEmployee(new Employee(3,"Rehan",70000));
 
-        Employee e= service.getHighestpaidEmployee();
+      //   service.ApplySalaryHike();
 
-        System.out.println("highest paid:" + e.name + " -" + e.salary);
+      //   Employee e= service.getHighestpaidEmployee();
 
-
-
-
-
-
-
+      //   System.out.println("highest paid:" + e.name + " -" + e.salary);
 
     }
 
