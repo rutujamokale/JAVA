@@ -14,14 +14,46 @@ public class App
     public static void main( String[] args )
     {
 
-      String str="java";
-      Map<Character,Integer> map = new HashMap<>();
 
-      for(char c:str.toCharArray()){
-        map.put(c,map.getOrDefault(c,0)+1);
+      String s="madam";
+      String rev= "";
+
+      for(int i=s.length() -1;i>=0;i--){
+        rev +=s.charAt(i);
       }
 
-      System.out.println(map);
+      if(s.equals(rev)){
+          System.out.println("palindrome");
+      }else{
+        System.out.println("not palindrome");
+      }
+
+      // String str="java";
+      // Map<Character,Integer> map = new HashMap<>();
+
+      // for(char c:str.toCharArray()){
+      //   map.put(c,map.getOrDefault(c,0)+1);
+      // }
+
+      // System.out.println(map);
+
+
+      // int arr[] ={1,2,2,3};
+
+      // Map<Integer,Boolean> map=new HashMap<>();
+      // for(int n: arr){
+      //   map.put(n,true);
+      // }
+      // System.out.println(map);
+
+
+      // String s="Rutuja";
+      // char [] arr = s.toCharArray();
+
+      // for(int i=arr.length -1 ;i>=0; i--){
+      //   System.out.println(arr[i]);
+      // }
+
 
       // EmployeeService  service = new EmployeeService();
       // service.addEmployee(new Employee(1,"Rupesh",50000));
