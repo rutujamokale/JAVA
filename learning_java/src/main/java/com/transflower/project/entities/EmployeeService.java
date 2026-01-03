@@ -21,8 +21,15 @@ public class EmployeeService {
            }
         }
 
-        public void getHighestpaidEmployee(){
-            
+        public Employee  getHighestpaidEmployee(){
+            Employee highest = employees.get(0);
+
+            for(Employee e: employees){
+                if(e.salary > highest.salary){
+                    highest=e;
+                }
+            }
+            return highest;
         } 
 
     }
