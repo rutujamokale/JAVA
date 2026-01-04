@@ -5,18 +5,33 @@ public class App
     public static void main( String[] args )
     {
 
+      int [] arr={10,20,30,40};
+      int first= arr[0];
+      int second =arr[0];
+
+      for(int i =1 ; i< arr.length;i++){
+        if(arr[i]>first){
+          second=first;
+          first=arr[i];
 
 
-       int[] arr = {50, 5, 25, 3, 75};
-       int max = arr[0];
-
-       for(int n:arr){
-        if(n>max){
-          max=n;
+        }else if(arr[i]> second && arr[i] !=first){
+          second=arr[i];
         }
-       }
+      }
 
-       System.out.println("Maximum value: " + max);
+      System.out.println("second largest=" +second);
+
+      //]  int[] arr = {50, 5, 25, 3, 75};
+      //  int max = arr[0];
+
+      //  for(int n:arr){
+     //   if(n>max){
+      //     max=n;
+      //   }
+      //  }
+
+      //  System.out.println("Maximum value: " + max);
 
       
 
