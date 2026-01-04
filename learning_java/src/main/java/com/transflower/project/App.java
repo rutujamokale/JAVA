@@ -1,36 +1,24 @@
 package com.transflower.project;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import com.transflower.project.entities.Employee;
-import com.transflower.project.entities.EmployeeService;
-import com.transflower.project.entities.Student1;
-
 public class App 
 {
     public static void main( String[] args )
     {
 
 
-      int num=121;
-      int original=num;
-      int rev=0;
 
-      while (num !=0) { 
-         int digit=num % 10;
-         rev= rev * 10 + digit;
-         num = num/10; 
-      }
+       int[] arr = {50, 5, 25, 3, 75};
+       int max = arr[0];
 
-      if (original == rev) {
-          System.out.println("palindrome");
-      }else{
-        System.out.println("not palindrome");
-      }
+       for(int n:arr){
+        if(n>max){
+          max=n;
+        }
+       }
 
+       System.out.println("Maximum value: " + max);
+
+      
 
       // String s="madam";
       // String rev= "";
@@ -87,7 +75,7 @@ public class App
       //   System.out.println("highest paid:" + e.name + " -" + e.salary);
 
     }
-
+  }
 
 
 
@@ -179,5 +167,5 @@ public class App
       
 
 
-    }
+    
 
