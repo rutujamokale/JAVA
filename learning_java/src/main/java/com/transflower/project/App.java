@@ -2,25 +2,53 @@ package com.transflower.project;
 
 public class App 
 {
-    public static void main( String[] args )
+    public static int fib(int n){
+        if(n==0)
+          return 0;
+        if(n==1)
+          return 1;
+        return fib(n-1) + fib (n-2);
+        
+      } 
+
+       public static void main( String[] args )
     {
-
-      int [] arr={10,20,30,40};
-      int first= arr[0];
-      int second =arr[0];
-
-      for(int i =1 ; i< arr.length;i++){
-        if(arr[i]>first){
-          second=first;
-          first=arr[i];
-
-
-        }else if(arr[i]> second && arr[i] !=first){
-          second=arr[i];
-        }
+    
+      for(int i=0;i<5;i++){
+        System.out.println(fib(i) + " ");
       }
+    }
 
-      System.out.println("second largest=" +second);
+        
+    
+    } 
+                
+         
+                          // int b=1;
+        // for(int i=1;i<=5;i++){
+        //   System.out.println(a + "");
+        //   int c= a+b;
+        //   a=b;
+        //   b=c;
+        // }
+
+
+      // int [] arr={10,20,30,40};
+      // int first= arr[0];
+      // int second =arr[0];
+
+      // for(int i =1 ; i< arr.length;i++){
+      //   if(arr[i]>first){
+      //     second=first;
+      //     first=arr[i];
+
+
+      //   }else if(arr[i]> second && arr[i] !=first){
+      //     second = arr [i];
+      //   }
+      // }
+
+      // System.out.println("second largest=" +second);
 
       //]  int[] arr = {50, 5, 25, 3, 75};
       //  int max = arr[0];
@@ -89,8 +117,8 @@ public class App
 
       //   System.out.println("highest paid:" + e.name + " -" + e.salary);
 
-    }
-  }
+    
+  
 
 
 
