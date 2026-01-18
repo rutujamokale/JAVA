@@ -22,7 +22,6 @@ public class AuthController {
     @PostMapping("/login")
     public Map<String, String> login() {
 
-       
         String token = jwtUtil.generateToken("student", "ADMIN");
 
         return Map.of("token", token);

@@ -15,15 +15,17 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/products")
 public class ProductController {
 
+    // Any authenticated user can access
     @GetMapping
     public String getProducts() {
         return "Secure product list";
     }
 
+    // Only ADMIN role can access
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
     public String createProduct(
-        @Valid @RequestBody CreateProductDto dto) {
+            @Valid @RequestBody CreateProductDto dto) {
 
         return "Product created";
     }
