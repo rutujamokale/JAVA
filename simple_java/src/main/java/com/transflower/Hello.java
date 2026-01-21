@@ -5,7 +5,7 @@ public class Hello{
         System.out.println("hi i am rutuja");
 
         int arr[] = { 10, 20, 30, 40 };
-
+        //sum and average
 
         int sum = 0;
         for (int x : arr) {
@@ -18,10 +18,12 @@ public class Hello{
 
         System.out.println("average" + average);
 
-        for (int i = arr.length - 1; i >= 0;i --){
-                System.out.println( arr[i] +"");
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println(arr[i] + "");
         }
 
+        //max 
         int Max = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > Max)
@@ -31,7 +33,7 @@ public class Hello{
         System.out.println("max value " + Max);
 
 
-
+        //min    
         int Min = arr[0];
 
         for (int x : arr) {
@@ -40,6 +42,9 @@ public class Hello{
         }
 
         System.out.println("min value" + Min);
+
+
+        //duplicate 
 
         int[] arr = { 1, 2, 3, 2, 4, 1 };
 
