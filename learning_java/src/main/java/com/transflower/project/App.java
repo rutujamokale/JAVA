@@ -1,27 +1,69 @@
 package com.transflower.project;
 
-public class App 
-{
-    public static int fib(int n){
-        if(n==0)
-          return 0;
-        if(n==1)
-          return 1;
-        return fib(n-1) + fib (n-2);
-        
-      } 
+public class App {
+  // public static int fib(int n){
+  //     if(n==0)
+  //       return 0;
+  //     if(n==1)
+  //       return 1;
+  //     return fib(n-1) + fib (n-2);
 
-       public static void main( String[] args )
-    {
-    
-      for(int i=0;i<5;i++){
-        System.out.println(fib(i) + " ");
+  // } 
+
+  public static void main(String[] args) {
+
+    abstract class vehicle {
+      abstract void start();
+    }
+
+    class car extends vehicle {
+
+      @Override
+      void start() {
+        System.out.println("car start with key");
       }
     }
 
-        
+  }
+}
+         // print all element of array
+
+        //  int[] arr = { 10, 20, 30, 40 };
+
+         // for (int i = 0; i < arr.length; i++) {
+         //   System.out.print(arr[i] + " ");
+         // }
+
+         //sum of array
+
+         // int sum = 0;
+
+         // for (int x : arr) {
+         //   sum += x;
+         // }
+
+         // System.out.println(sum);
+
+         // largest element in array
+
+         // int max = arr[0];
+         // for (int i = 1; i < arr.length; i++) {
+         //   if (arr[i] > max)
+         //     max = arr[i];
+         // }
+         // System.out.println(max);
+
+      //    int min = arr[0];
+      //    for (int x : arr) {
+      //      if (x < min)
+      //        min = x;
+      //    }
+         
+          //  System.out.println(min);
+
+      //  }
     
-    } 
+    
                 
          
                           // int b=1;
@@ -207,8 +249,3 @@ public class App
         // double finalAmount=ds.calculatefinalamount(billAmount);
         // System.out.println("final amount is:"+finalAmount);
         // System.out.println("bill amount is:"+billAmount);
-      
-
-
-    
-

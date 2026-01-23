@@ -10,7 +10,7 @@ import com.tap.students.security.JwtUtil;
 
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/auth")
 public class AuthController {
 
     private final JwtUtil jwtUtil;
@@ -21,7 +21,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public Map<String, String> login() {
-
+        System.out.println("login");
         String token = jwtUtil.generateToken("student", "ADMIN");
 
         return Map.of("token", token);
