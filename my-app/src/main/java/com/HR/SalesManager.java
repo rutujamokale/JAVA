@@ -1,4 +1,4 @@
-package com.HR;
+package com.hr;
 
 public class SalesManager extends SalesEmployee  {
     int bonus;

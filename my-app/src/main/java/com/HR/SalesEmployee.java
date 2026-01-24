@@ -1,8 +1,8 @@
-package com.HR;
+package com.hr;
 
+import com.hr.Interface.IAppraisable;
 
-
-public class SalesEmployee extends Employee {
+public class SalesEmployee extends Employee implements  IAppraisable{
 
     private int incentive;
     private int target;
@@ -22,6 +22,11 @@ public class SalesEmployee extends Employee {
         this.basicSalary = basicSalary;
         this.hra = hra;
 
+    }
+
+    @Override
+    public void ConductAppraisal(){
+        System.out.println("Sales Employee appraisal completed");
     }
 
     @Override

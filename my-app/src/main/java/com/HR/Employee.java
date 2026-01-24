@@ -1,4 +1,4 @@
-package com.HR;
+package com.hr;
 
 abstract public class Employee {
 

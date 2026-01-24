@@ -1,7 +1,7 @@
-package com.HR.App;
+package com.hr.App;
 
-import com.HR.Employee;
-import com.HR.SalesEmployee;
+import com.hr.Employee;
+import com.hr.SalesEmployee;
 
 /**
  * Hello world!
