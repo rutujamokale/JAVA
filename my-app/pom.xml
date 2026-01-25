@@ -22,7 +22,7 @@
             <artifactId>exec-maven-plugin</artifactId>
             <version>3.1.0</version> <!-- use latest stable -->
             <configuration>
-                <mainClass>com.HR.App.App</mainClass>
+                <mainClass>com.hr.App.App</mainClass>
             </configuration>
         </plugin>
     </plugins>
