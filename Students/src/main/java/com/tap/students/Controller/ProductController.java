@@ -14,13 +14,11 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
-
     // Any authenticated user can access
     @GetMapping
     public String getProducts() {
         return "Secure product list";
     }
-
     // Only ADMIN role can access
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
