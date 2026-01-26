@@ -1,6 +1,5 @@
 package com.tap.students.Controller;
 
-import java.lang.annotation.Documented;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,7 +29,6 @@ public class AuthController {
             String token = jwtUtil.generateToken("student", "ADMIN");
             return Map.of("token", token);
         }
-
         else {
             return Map.of("token", "invalid");
         }

@@ -14,10 +14,8 @@ public class AuditController {
 
     @GetMapping("/log")
     public String audit(Authentication auth) {
-
         log.info("User {} accessed /audit",
             auth.getName());
-
         return "Logged";
     }
 }
