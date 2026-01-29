@@ -8,10 +8,7 @@ import com.hr.Interface.ITrainer;
 import com.hr.SalesEmployee;
 import com.hr.SalesManager;
 
-/**
- * Hello world!
- *
- */
+
 public class App {
     public static void main(String[] args) {
         Employee emp1 = new SalesEmployee(1, "rutuja", "mokale", "rutujamokale@gmail.com", 9545107220L, "pune",
