@@ -33,7 +33,6 @@ public class SalesEmployee extends Employee implements  IAppraisable{
     public void doWork() {
         System.out.println(firstName + "is selling products and meeting clients");
     }
-
      
     public int computePay() {
         int salary = this.basicSalary + this.hra;

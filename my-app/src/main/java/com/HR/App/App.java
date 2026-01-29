@@ -13,7 +13,6 @@ import com.hr.SalesManager;
  *
  */
 public class App {
-
     public static void main(String[] args) {
         Employee emp1 = new SalesEmployee(1, "rutuja", "mokale", "rutujamokale@gmail.com", 9545107220L, "pune",
                 "23-01-2026", 1000, 5000, 20000, 10000, 120000);
@@ -36,15 +35,12 @@ public class App {
                  
          appraisable.ConductAppraisal();
 
-
          IBonusEligible bonusEligible = manager;
 
          System.out.println("bonus:" + bonusEligible.CalculateBonus());
 
-
          IInterviewPanel panel = manager;
          panel.TakeInterview();
-
 
          ITrainer trainer = manager;
               trainer.Train();
