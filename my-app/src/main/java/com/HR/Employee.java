@@ -10,7 +10,6 @@ abstract public class Employee {
      String location;
      String birthDate;
      
-        
      public Employee(int id,String firstName,String lastName,String email,long contactNumber,String location,String birthDate){
           this.id = id;
           this.firstName = firstName;
@@ -19,9 +18,7 @@ abstract public class Employee {
           this.contactNumber = contactNumber;
           this.location = location;
           this.birthDate = birthDate;
-     }
-
-      
+     }      
      public  abstract void doWork();
   
      public abstract int computePay();
