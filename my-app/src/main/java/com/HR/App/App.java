@@ -14,7 +14,6 @@ public class App {
         Employee emp1 = new SalesEmployee(1, "rutuja", "mokale", "rutujamokale@gmail.com", 9545107220L, "pune",
                 "23-01-2026", 1000, 5000, 20000, 10000, 120000);
 
-
          Employee emp2 = new SalesEmployee(1, "reena", "mokale", "reenamokale@gmail.com", 9545107220L, "pune",
                  "23-01-2026", 2000, 6000, 30000, 20000, 130000);
                 
@@ -23,7 +22,6 @@ public class App {
          
          System.out.println(emp1.computePay());
          System.out.println(emp2.computePay());
-         
          
          SalesManager manager = new SalesManager(1, "rutuja", "mokale", "rutujamokale2003@gmail.com", 9529259355L,
                          "mumbai", "22-06-2003", 10000, 5000, 20000, 40000, 2000, 20000);
@@ -42,6 +40,5 @@ public class App {
          ITrainer trainer = manager;
               trainer.Train();
 
-        
     }
 }
