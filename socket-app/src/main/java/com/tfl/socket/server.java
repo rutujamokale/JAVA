@@ -2,7 +2,7 @@ package com.tfl.socket;
 import java.net.*;
 import java.io.*;
 
-public class server {
+public class Server {
     public static void main(String[] args) {
         try{
             ServerSocket serverSocket= new ServerSocket(5000);
@@ -28,7 +28,7 @@ public class server {
             
             System.out.println("client says :" + message);
 
-            System.out.println("hello client ,I received" + message);
+            out.println("hello client ,I received" + message);
 
             socket.close();
             serverSocket.close();
@@ -38,3 +38,4 @@ public class server {
 
     }
 }
+
