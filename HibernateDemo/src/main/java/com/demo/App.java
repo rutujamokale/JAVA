@@ -17,18 +17,18 @@ public class App
 
         Transaction tx = session.beginTransaction();
 
-         Student s = new Student();
-         s.setId(4);
-         s.setName("reena");
-         s.setMarks(80);
+        //  Student s = new Student();
+        //  s.setId(4);
+        //  s.setName("reena");
+        //  s.setMarks(80);
 
-         session.save(s);
+        //  session.save(s);
 
-        // Student s = session.get(Student.class, 4);
-        // if (s != null) {
-        //     s.setMarks(90);
-        //     session.update(s);
-        // }
+        Student s = session.get(Student.class, 4);
+        if (s != null) {
+            s.setMarks(90);
+            session.update(s);
+        }
         tx.commit();
 
         session.close();
