@@ -16,7 +16,7 @@ public class App
         Session session = factory.openSession();
 
         Transaction tx = session.beginTransaction();
-
+        //insert 
         //  Student s = new Student();
         //  s.setId(4);
         //  s.setName("reena");
@@ -24,11 +24,20 @@ public class App
 
         //  session.save(s);
 
+        //update 
+        // Student s = session.get(Student.class, 4);
+        // if (s != null) {
+        //     s.setMarks(90);
+        //     session.update(s);
+        // }
+
+        //delete
+
         Student s = session.get(Student.class, 4);
         if (s != null) {
-            s.setMarks(90);
-            session.update(s);
+            session.delete(s);
         }
+
         tx.commit();
 
         session.close();
