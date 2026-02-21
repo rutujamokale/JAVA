@@ -6,9 +6,9 @@ import com.tfl.Subjectapi.Entity.Subject;
 
 public interface SubjectService {
 
-    public abstract List<Subject> getAllSubjects();
+    public  List<Subject> getAllSubjects();
 
-    public abstract Subject addSubject(Subject subject);
+    public  Subject addSubject(Subject subject);
 
-    public abstract void deleteSubject(int id);
+    public void deleteSubject(int id);
 }
