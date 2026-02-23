@@ -1,11 +1,19 @@
 package com.tfl.dockersubjectapi.Controller;
-import com.tfl.dockersubjectapi.Service.SubjectService;
-import com.tfl.dockersubjectapi.Entity.Subject;
+
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.tfl.dockersubjectapi.Entity.Subject;
+import com.tfl.dockersubjectapi.Service.SubjectService;
 
 @RestController
 @RequestMapping("/api/subjects")
@@ -18,7 +26,7 @@ public class SubjectController {
         this.svc = svc;
     }
 
-    @GetMapping("/subjects")
+    @GetMapping("/getsubjects")
     public CompletableFuture<List<Subject>> getAllSubjects() {
         return svc.getAllSubjects();
     }
