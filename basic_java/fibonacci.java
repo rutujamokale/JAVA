@@ -1,18 +1,25 @@
 
 public class fibonacci {
     public static void main(String[] args) {
-        int n = 10;
-        int first = 0, second = 1;
+        int n = 7;
+        int first = 0;
+        int second = 1;
 
-        System.out.print("fibonacci series:");
-        for (int i = 1; i <= n; i++) {
-            System.out.print(first + " ");
-            int next=first+second;
-            first=second;
-            second=next;
-        }
+        if (n == 0) {
+        System.out.println(first);
+    } else if (n == 1) {
+       
+          System.out.println(second);
+      } else {
+          for (int i = 2; i <= n; i++) {
+              int next = first + second;
+              first = second;
+              second = next;
+          }
 
+      }
+     System.out.println(second);
                 
     }
 }
-    
+    //n=10;

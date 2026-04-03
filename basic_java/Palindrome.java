@@ -1,9 +1,17 @@
 public class Palindrome {
     public static void main(String[] args) {
         String str = "madam";
-        String rev = new StringBuilder(str).reverse().toString();
-        System.out.println("reversed string: " +rev );
+        String rev = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
 
+            rev += str.charAt(i);
+
+        }
+        if (str.equals(rev)) {
+            System.out.println("this is palindrome");
+        } else {
+            System.out.println("this is not palindrome");
+        }
 
     }
 }
