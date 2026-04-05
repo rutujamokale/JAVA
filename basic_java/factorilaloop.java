@@ -5,7 +5,7 @@ public class factorilaloop {
 
         for (int i = 1; i <= num; i++) {
             factorial = factorial * i;
-            ;
+            
         }
         System.out.println("factorila:" + factorial);
     }
