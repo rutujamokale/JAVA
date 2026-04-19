@@ -16,6 +16,6 @@ public class AlternatingChar {
         String s = "AABAAB";
 
         int result = alternatingChar(s);
-        System.out.println("minimum deletions requir:" + result);
+        System.out.println("minimum deletions require:" + result);
     }
 }
