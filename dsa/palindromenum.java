@@ -1,6 +1,6 @@
 public class palindromenum {
     public static boolean isPalindome(int num) {
-
+        
         int original = num;
         int rev = 0;
 
@@ -13,7 +13,6 @@ public class palindromenum {
 
        return original == rev;
     }
-    
     public static void main(String[] args) {
         int num = 121;
         if (isPalindome(num)) {

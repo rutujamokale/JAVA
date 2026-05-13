@@ -7,7 +7,7 @@ public class MakingAnagrams {
         }
 
         for (char c : s2.toCharArray()) {
-            freq[c - 'a']--;
+            freq[c -0 'a']--;
         }
 
         int deletions = 0;
