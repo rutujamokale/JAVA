@@ -18,7 +18,6 @@ public class Serilization1{
           employees.add(new Employee (4,"rushi",80000)); 
           employees.add(new Employee (5,"reyansh",90000)); 
 
-
             ObjectMapper mapper=new ObjectMapper();
             mapper.writeValue(new File("employee.json"),employees);
             System.out.println("writing data in json file");
