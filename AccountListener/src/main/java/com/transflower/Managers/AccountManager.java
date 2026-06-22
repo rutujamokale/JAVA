@@ -1,26 +1,20 @@
-package com.transflower;
+package com.transflower.Managers;
+import com.transflower.Managers.FileIoManager;
+import java.util.List;
+
 
 public class AccountManager implements FundTransferOperation{
 
 
         FileIoManager filemgr=new FileIoManager();
         List<Account> accounts= new ArrayList<Account>();
-        accounts = filemgr.LoadFromFile("Account.json");
-
-        public AccountManager(){
-            Account a1=new Account(1,"Rutaa",5000,LocalDateTime.now());
-            Account a2 =new Account(2,"Nikita",10000,LocalDateTime.now());
-            accounts.add(a1);
-            accounts.add(a2);
-            try{
-            filemgr.saveToFile("Account.json",accounts);
-            }catch(Exception e){
-                e.printStackTrace();
-            }
+    
+        public AccountManager(){ 
+            
         }
 
         public void Credit(int accountId,double amount){
-        try {
+             accounts = filemgr.LoadFromFile("Account.json");
             for(Account ac :accounts){
                 if(ac.getAccountId()==accountId){
                     double newbalance=ac.getBalance() + amount;
@@ -28,14 +22,12 @@ public class AccountManager implements FundTransferOperation{
                     filemgr.saveToFile("Account.json",accounts);
                 }
             }
-        }catch(Exception e){
-            e.printStackTrace();
         }
 
-        }
+        
 
         public void Debit(int accountId,double amount ){
-            try{
+            accounts = filemgr.LoadFromFile("Account.json");
             for(Account ac: accounts){
                 if(ac.getAccountId()== accountId){
                     double newbalance=ac.getBalance() - amount;
@@ -43,16 +35,19 @@ public class AccountManager implements FundTransferOperation{
                     filemgr.saveToFile("Account.json",accounts);
                 }
             }
-            }catch(Exception e){
-                e.printStackTrace();
-            }
         }
-
         
     public boolean FundTransfer( int fromAccountId, int toAccountId, double amount){
+
+        try{
             Debit(fromAccountId,amount);
             Credit(toAccountId,amount);
+        }
+        catch(Exception e){
+                e.printStackTrace();
+        }
+            return true;
 
                                 
-    }
+    }                                
 }

@@ -2,7 +2,7 @@ package com.transflower;
 import java.util.*;
 
 //Publisher
-public class Account implements DepositOperation,WithdrawOperation{
+public class Account{
     
 
     private int accountId;

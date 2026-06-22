@@ -21,9 +21,9 @@ public class FileIoManager{
 
     public List<Account> LoadFromFile(String fileName){
        try{
-        boolean status false;
+      
         ObjectMapper mapper=new ObjectMapper();
-        List<Account> accounts=mapper.readValue(new File(fileName),new TypeReference List<Account> {}());
+        List<Account> accounts=mapper.readValue(new File(fileName),new TypeReference<List<Account>>() {});
         return accounts;
        }catch(Exception e){
         e.printStackTrace();
