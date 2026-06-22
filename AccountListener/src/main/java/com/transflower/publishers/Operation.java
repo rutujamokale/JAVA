@@ -1,4 +1,5 @@
 package com.transflower.publishers;
+import java.time.LocalDateTime;
 
 public class Operation{
     private int fromAccount;
@@ -9,12 +10,12 @@ public class Operation{
     public Operation(){
 
     }
-    public Operation(int fromAccount,int toAccount,double amount,LocalDateTime date){
+    public Operation(int fromAccount,int toAccount,double amount,LocalDateTime TransactionDate){
 
        this.fromAccount = fromAccount;
         this.toAccount = toAccount;
         this.amount = amount;
-        this.date = date;
+        this.TransactionDate = TransactionDate;
     }
 
     public int getFromAccount(){

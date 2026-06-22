@@ -1,19 +1,17 @@
 package com.transflower.Managers;
-import com.transflower.Managers.FileIoManager;
+import com.transflower.publishers.Account;
 import java.util.List;
+import java.util.ArrayList;
+import com.transflower.publishers.operations.DepositeOperation;
+import com.transflower.publishers.operations.WithdrawOperation;
+import com.transflower.publishers.operations.FundTransferOperation;
 
 
-public class AccountManager implements FundTransferOperation{
+public class AccountManager implements FundTransferOperation,DepositeOperation,WithdrawOperation{
 
-
-        FileIoManager filemgr=new FileIoManager();
-        List<Account> accounts= new ArrayList<Account>();
-    
-        public AccountManager(){ 
-            
-        }
-
-        public void Credit(int accountId,double amount){
+        FileIoManager filemgr = new FileIoManager();
+        List<Account> accounts = new ArrayList<>();
+        public void deposit(int accountId,double amount){
              accounts = filemgr.LoadFromFile("Account.json");
             for(Account ac :accounts){
                 if(ac.getAccountId()==accountId){
@@ -24,9 +22,7 @@ public class AccountManager implements FundTransferOperation{
             }
         }
 
-        
-
-        public void Debit(int accountId,double amount ){
+        public void withdraw(int accountId,double amount ){
             accounts = filemgr.LoadFromFile("Account.json");
             for(Account ac: accounts){
                 if(ac.getAccountId()== accountId){
@@ -40,8 +36,8 @@ public class AccountManager implements FundTransferOperation{
     public boolean FundTransfer( int fromAccountId, int toAccountId, double amount){
 
         try{
-            Debit(fromAccountId,amount);
-            Credit(toAccountId,amount);
+            withdraw(fromAccountId,amount);
+            deposit(toAccountId,amount);
         }
         catch(Exception e){
                 e.printStackTrace();

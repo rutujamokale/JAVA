@@ -1,6 +1,7 @@
-package com.transflower;
+package com.transflower.Managers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.transflower.publishers.Account;
 import java.util.List;
 import java.io.File;
 

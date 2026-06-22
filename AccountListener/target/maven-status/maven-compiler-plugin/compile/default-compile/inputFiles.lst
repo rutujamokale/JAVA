@@ -1,5 +1,3 @@
-D:\JAVA\AccountListener\src\main\java\com\transflower\AccountListener.java
-D:\JAVA\AccountListener\src\main\java\com\transflower\AccountsDepartment.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\App.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\listeners\AccountListener.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\listeners\AccountsDepartment.java
@@ -8,7 +6,7 @@ D:\JAVA\AccountListener\src\main\java\com\transflower\Managers\FileIoManager.jav
 D:\JAVA\AccountListener\src\main\java\com\transflower\Managers\UIManager.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\publishers\Account.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\publishers\CardService.java
-D:\JAVA\AccountListener\src\main\java\com\transflower\publishers\Opeartion.java
+D:\JAVA\AccountListener\src\main\java\com\transflower\publishers\Operation.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\publishers\operations\DepositeOperation.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\publishers\operations\FundTransferOperation.java
 D:\JAVA\AccountListener\src\main\java\com\transflower\publishers\operations\WithdrawOperation.java

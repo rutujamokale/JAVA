@@ -1,5 +1,9 @@
-package com.transflower;
+package com.transflower.publishers;
 import java.util.*;
+import java.time.LocalDateTime;
+import com.transflower.Services.NotificationService;
+import com.transflower.listeners.AccountListener;
+
 
 //Publisher
 public class Account{
@@ -30,17 +34,17 @@ public class Account{
         this.accountId=accountId;
     }
 
-    public String getAccountHolder(){
-        return AccountListener;
-    }
+   public String getAccountHolder(){
+    return AccountHolder;
+}
 
 
-    public void setAccountHolder(String accountholder){
-            this.accountholder=accountholder;
-    }
+   public void setAccountHolder(String accountHolder){
+    this.AccountHolder = accountHolder;
+}
 
     public LocalDateTime getDate(){
-        return date;
+        return Date;
     }
 
     public void setDate(LocalDateTime date){

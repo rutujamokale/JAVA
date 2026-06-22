@@ -2,6 +2,6 @@ package com.transflower.publishers.operations;
 
 public interface WithdrawOperation {
 
-    void withdraw(double amount);
+    void withdraw(int accountId, double amount);
     
 }

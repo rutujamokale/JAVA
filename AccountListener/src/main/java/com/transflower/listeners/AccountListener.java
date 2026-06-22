@@ -1,8 +1,8 @@
-package com.transflower;
+package com.transflower.listeners;
 
 
 //Listener
-interface AccountListener {
+ public interface AccountListener {
     void onUnderBalance(double balance);
     void onOverBalance(double balance);
 }

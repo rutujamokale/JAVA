@@ -37,7 +37,7 @@ public class UIManager {
                     System.out.print("Enter Amount: ");
                     double amount = sc.nextDouble();
 
-                    mgr.Credit(accountId, amount);
+                    mgr.deposit(accountId, amount);
                     System.out.println("Amount credited successfully.");
                     break;
                 }
@@ -49,7 +49,7 @@ public class UIManager {
                     System.out.print("Enter Amount: ");
                     double amount = sc.nextDouble();
 
-                    mgr.Debit(accountId, amount);
+                    mgr.withdraw(accountId, amount);
                     System.out.println("Amount debited successfully.");
                     break;
                 }
