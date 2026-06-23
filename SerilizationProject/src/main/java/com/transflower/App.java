@@ -11,5 +11,8 @@ public class App
     {
         Serilization s1 = new Serilization();
         s1.serilize();
+
+        Deserization d1 = new Deserization();
+        d1.deserilize();
     }
 }
